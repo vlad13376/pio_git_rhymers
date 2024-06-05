@@ -5,6 +5,22 @@ public class    DefaultCountingOutRhymer {
     public static final int DEFAULT_NEGATIVE_VALUE = -1;
     public static final int ARRAY_S_PLUS_DEFAULT_NEGATIVE_VALUE = 11;
     private int[] numbers = new int[ARRAY_S];
+
+    public static int getArraySize() {
+        return ARRAY_SIZE;
+    }
+
+    public static int getDefaultNegativeValue() {
+        return DEFAULT_NEGATIVE_VALUE;
+    }
+
+    public static int getArraySizePlusDefaultNegativeValue() {
+        return ARRAY_SIZE_PLUS_DEFAULT_NEGATIVE_VALUE;
+    }
+
+    public int getTotal() {
+        return total;
+    }
     public int total = DEFAULT_NEGATIVE_VALUE;
     public void countIn(int in) {
         if (!isFull())
